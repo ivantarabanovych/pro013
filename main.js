@@ -1,5 +1,6 @@
-function multiplyByTwo(num){
-    return num * 2;
-}
-
-console.log(multiplyByTwo(5));
+function findMax(numbers) {
+    return Math.max(...numbers);
+  }
+  
+  const numbers = [10, 5, 8, 20, 3];
+  console.log(findMax(numbers));
