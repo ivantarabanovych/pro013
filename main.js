@@ -1,11 +1,7 @@
-function updateUserInfo(user, newName) {
-    return { ...user, name: newName };
-  }
+function calculateAverage(numbers){
+    const sum = numbers.reduce((total,num) => total + num, 0)
+    return sum / numbers.length;
+}
 
-  function getUserInfo(user) {
-    return user.name;
-  }
-
-  const user = { name: 'John', age: 30 };
-  const updatedUser = updateUserInfo(user, 'Alice');
-  console.log(getUserInfo(updatedUser));
+const numbers = [12, 32, 3, 14, 5];
+console.log(calculateAverage(numbers));
