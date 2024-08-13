@@ -1,6 +1,11 @@
-function findMax(numbers) {
-    return Math.max(...numbers);
+function updateUserInfo(user, newName) {
+    return { ...user, name: newName };
   }
-  
-  const numbers = [10, 5, 8, 20, 3];
-  console.log(findMax(numbers));
+
+  function getUserInfo(user) {
+    return user.name;
+  }
+
+  const user = { name: 'John', age: 30 };
+  const updatedUser = updateUserInfo(user, 'Alice');
+  console.log(getUserInfo(updatedUser));
